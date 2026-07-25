@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayeza Manlangit | Accounts Receivable & Collections VA</title>
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #162529;
+    --teal: #0b7473;
+    --mist: #edf6f5;
+    --cream: #fffdf8;
+    --gold: #e7ae49;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: "DM Sans", sans-serif; color: var(--ink); margin: 0; overflow-x: hidden; background: var(--cream); }
+  .display-font { font-family: "Fraunces", serif; }
+  .nav-link { position: relative; font-size: .9rem; font-weight: 600; color: #385154; text-decoration: none; }
+  .nav-link::after { content: ""; position: absolute; left: 0; bottom: -5px; width: 100%; height: 2px; background: var(--teal); transform: scaleX(0); transform-origin: left; transition: transform .22s ease; }
+  .nav-link:hover::after, .nav-link:focus-visible::after { transform: scaleX(1); }
+  .soft-shadow { box-shadow: 0 20px 60px rgba(24, 61, 63, .11); }
+  .skill-chip { border: 1px solid #c7e0dd; background: #f8fffe; color: #285657; }
+  .pipeline-step { position: relative; }
+  .pipeline-step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 100%;
+    width: 100%;
+    height: 2px;
+    background: repeating-linear-gradient(90deg, #e7ae49 0 8px, transparent 8px 14px);
+  }
+  @media (max-width: 900px) {
+    .pipeline-step:not(:last-child)::after { display: none; }
+  }
+  .focus-ring:focus-visible, a:focus-visible, button:focus-visible { outline: 3px solid rgba(231,174,73,.8); outline-offset: 4px; }
+</style>
+</head>
+<body>
+
+<header class="w-full sticky top-0 z-30 border-b border-slate-900/5 bg-[#fffdf8]/90 backdrop-blur">
+  <div class="w-full max-w-7xl mx-auto px-5 sm:px-8 py-4 flex items-center justify-between">
+    <a href="#home" class="focus-ring no-underline">
+      <span class="text-lg font-bold tracking-tight" style="color:#0b7473;">Ayeza Manlangit</span>
+    </a>
+    <nav aria-label="Primary navigation" class="hidden md:flex items-center gap-7">
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#experience">Experience</a>
+      <a class="nav-link" href="#services">Services</a>
+      <a class="nav-link" href="#case-studies">Case Studies</a>
+      <a class="nav-link" href="#skills">Skills</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+    <a href="#" id="resume-link-top" target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-bold no-underline" style="background:#0b7473; color:#fff;">Download Resume</a>
+    <button id="menu-button" type="button" class="md:hidden p-2 rounded-lg text-[#0b7473]" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+      <i data-lucide="menu" aria-hidden="true"></i>
+    </button>
+  </div>
+  <nav id="mobile-menu" aria-label="Mobile navigation" class="hidden md:hidden border-t border-slate-900/5 bg-[#fffdf8] px-5 py-4">
+    <div class="flex flex-col gap-4">
+      <a class="font-semibold text-[#385154]" href="#about">About</a>
+      <a class="font-semibold text-[#385154]" href="#experience">Experience</a>
+      <a class="font-semibold text-[#385154]" href="#services">Services</a>
+      <a class="font-semibold text-[#385154]" href="#case-studies">Case Studies</a>
+      <a class="font-semibold text-[#385154]" href="#skills">Skills</a>
+      <a class="font-semibold text-[#385154]" href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section id="home" class="w-full" style="background: radial-gradient(circle at 88% 8%, rgba(231,174,73,.22), transparent 24rem), radial-gradient(circle at 8% 34%, rgba(11,116,115,.12), transparent 28rem);">
+    <div class="w-full max-w-7xl mx-auto px-5 sm:px-8 py-16 lg:py-24 grid lg:grid-cols-[1.1fr_.9fr] gap-12 lg:gap-20 items-center">
+      <div>
+        <p class="uppercase tracking-[.2em] text-sm font-bold" style="color:#0b7473;">Accounts Receivable &amp; Collections VA</p>
+        <h1 class="display-font mt-5 max-w-3xl leading-[1.05] text-4xl sm:text-5xl font-bold" style="color:#162529;">Accurate collections. Clear communication. Nothing falls through the cracks.</h1>
+        <p class="mt-7 max-w-2xl text-lg leading-8" style="color:#496063;">I'm Ayeza Bula Manlangit, an Accounts Receivable Collector with 3.5+ years of experience managing a high-volume, multi-region customer portfolio for a global logistics leader — plus a track record of building AI-assisted tools to automate the manual parts of the job.</p>
+        <div class="mt-9 flex flex-col sm:flex-row gap-3">
+          <a href="#contact" class="inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 font-bold no-underline transition-transform hover:-translate-y-0.5" style="background:#0b7473; color:#fff;">Let's Work Together</a>
+          <a href="#services" class="inline-flex items-center justify-center gap-2 rounded-full border px-6 py-3.5 font-bold no-underline transition-transform hover:-translate-y-0.5" style="border-color:#0b7473; color:#0b7473; background:#fff;">See What I Do</a>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="absolute -inset-4 rounded-[2rem] border -rotate-3" style="border-color:rgba(11,116,115,.15);"></div>
+        <div class="relative overflow-hidden rounded-[1.7rem] soft-shadow" style="background:#0b7473;">
+          <img loading="lazy" class="w-full h-[360px] sm:h-[460px] object-cover opacity-90" src="https://images.pexels.com/photos/1128207/pexels-photo-1128207.jpeg" alt="Desk setup with laptop, representing remote finance and AR work.">
+          <div class="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-[#0b393a] via-[#0b393a]/50 to-transparent">
+            <p class="text-white font-semibold max-w-sm">Organized, dependable remote support for AR, collections, and finance admin.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <section aria-label="Career highlights" class="w-full border-y" style="border-color:rgba(22,37,41,.1); background:#0b7473;">
+    <div class="w-full max-w-7xl mx-auto px-5 sm:px-8 py-7 grid grid-cols-2 lg:grid-cols-4 text-white">
+      <div class="px-4 py-2 border-t lg:border-t-0 lg:border-l first:border-t-0 first:lg:border-l-0" style="border-color:rgba(255,255,255,.2);">
+        <p class="display-font text-3xl font-bold">3.5+</p>
+        <p class="mt-1 text-sm text-white/75">Years in AR &amp; Collections</p>
+      </div>
+      <div class="px-4 py-2 border-t lg:border-t-0 lg:border-l" style="border-color:rgba(255,255,255,.2);">
+        <p class="display-font text-3xl font-bold">300+</p>
+        <p class="mt-1 text-sm text-white/75">Active cash accounts managed</p>
+      </div>
+      <div class="px-4 py-2 border-t lg:border-t-0 lg:border-l" style="border-color:rgba(255,255,255,.2);">
+        <p class="display-font text-3xl font-bold">100+</p>
+        <p class="mt-1 text-sm text-white/75">Active credit accounts managed</p>
+      </div>
+      <div class="px-4 py-2 border-t lg:border-t-0 lg:border-l" style="border-color:rgba(255,255,255,.2);">
+        <p class="display-font text-3xl font-bold">3</p>
+        <p class="mt-1 text-sm text-white/75">Regions supported: AU, PH &amp; ID</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="w-full" style="background:#fffdf8;">
+    <div class="w-full max-w-7xl mx-auto px-5 sm:px-8 py-20 lg:py-28 grid lg:grid-cols-[.82fr_1.18fr] gap-12 lg:gap-20 items-center">
+      <div class="relative">
+        <div class="absolute -left-3 -top-3 w-28 h-28 rounded-tl-[2.3rem] border-l-8 border-t-8" style="border-color:#e7ae49;"></div>
+        <img loading="lazy" class="relative w-full min-h-[350px] object-cover rounded-[1.6rem] soft-shadow" src="https://images.pexels.com/photos/10041240/pexels-photo-10041240.jpeg" alt="Focused professional working on a laptop in a modern office setting.">
+      </div>
+      <div>
+        <p class="uppercase tracking-[.2em] text-sm font-bold" style="color:#0b7473;">A practical finance partner</p>
+        <h2 class="display-font mt-4 leading-tight text-3xl font-bold" style="color:#162529;">Books and balances, kept honest — one account at a time.</h2>
+        <p class="mt-6 text-lg leading-8" style="color:#496063;">My day-to-day is collections: following up on outstanding payments, resolving customer payment queries, reconciling accounts, and reporting on where things stand. I bring a calm, process-driven approach to keeping records accurate and customers informed.</p>
+        <p class="mt-4 text-lg leading-8" style="color:#496063;">Beyond the daily work, I look for ways to remove repetitive manual steps — which is why I've built two AI-assisted tools that are now part of how my team handles reporting and invoice submission (more on those below).</p>
+        <div class="mt-8 grid sm:grid-cols-2 gap-4">
+          <div class="rounded-xl p-5 border" style="background:#edf6f5; border-color:#d7e9e6;">
+            <i data-lucide="badge-check" class="mb-3" style="color:#0b7473;" width="23" height="23" aria-hidden="true"></i>
+            <p class="font-semibold" style="color:#244548;">Experienced in payment follow-up, account reconciliation, and AR aging reporting.</p>
+          </div>
+          <div class="rounded-xl p-5 border" style="background:#fff7e9; border-color:#f1dfba;">
+            <i data-lucide="globe-2" class="mb-3" style="color:#a76a11;" width="23" height="23" aria-hidden="true"></i>
+            <p class="font-semibold" style="color:#5f461e;">Supported customer portfolios across Australia, the Philippines, and Indonesia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="w-full" style="background:#edf6f5;">
+    <div class="w-full max-w-7xl mx-auto px-5 sm:px-8 py-20 lg:py-28">
+      <div class="max-w-3xl">
+        <p class="uppercase tracking-[.2em] text-sm font-bold" style="color:#0b7473;">Professional experience</p>
+        <h2 class="display-font mt-4 leading-tight text-3xl font-bold" style="color:#162529;">Built on ownership, follow-through, and customer coordination.</h2>
+      </div>
+      <article class="mt-10 rounded-[1.6rem] bg-white p-7 sm:p-10 soft-shadow border" style="border-color:#d9e8e6;">
+        <div class="flex flex-col md:flex-row gap-6 md:items-start md:justify-between">
+          <div>
+            <p class="uppercase tracking-[.16em] text-sm font-bold" style="color:#0b7473;">Maersk</p>
+            <h3 class="display-font mt-2 text-xl font-bold" style="color:#162529;">Collector, Accounts Receivable</h3>
+          </div>
+          <span class="inline-flex w-fit rounded-full px-4 py-2 text-sm font-bold" style="background:#edf6f5; color:#0b7473;">December 2022 — Present</span>
+        </div>
+        <p class="mt-6 max-w-4xl text-lg leading-8" style="color:#496063;">Supporting cash and credit customer portfolios through proactive collections, customer payment query resolution, account reconciliation, reporting, and cross-functional coordination.</p>
+        <div class="mt-8 grid md:grid-cols-2 gap-5">
+          <div class="flex gap-3">
+            <i data-lucide="circle-check-big" class="shrink-0 mt-1" style="color:#0b7473;" width="20" height="20" aria-hidden="true"></i>
+            <p class="leading-7" style="color:#385154;">Manage a portfolio of 300+ cash accounts and 100+ credit customers with active shipments across three regions.</p>
+          </div>
+          <div class="flex gap-3">
+            <i data-lucide="circle-check-big" class="shrink-0 mt-1" style="color:#0b7473;" width="20" height="20" aria-hidden="true"></i>
+            <p class="leading-7" style="color:#385154;">Resolve customer payment queries and follow up on overdue balances via calls and email, reducing outstanding balances across the portfolio.</p>
+          </div>
+          <div class="flex gap-3">
+            <i data-lucide="circle-check-big" class="shrink-0 mt-1" style="color:#0b7473;" width="20" height="20" aria-hidden="true"></i>
+            <p class="leading-7" style="color:#385154;">Submit invoices to customer-specific platforms for select high-profile enterprise accounts, ensuring compliance with each customer's requirements.</p>
+          </div>
+          <div class="flex gap-3">
+            <i data-lucide="circle-check-big" class="shrink-0 mt-1" style="color:#0b7473;" width="20" height="20" aria-hidden="true"></i>
+            <p class="leading-7" style="color:#385154;">Reconcile accounts using SAP, including a full unapplied-payment clean-up initiative that improved payment application accuracy.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="w-full" style="background:#fffdf8;">
+    <div class="w-full max-w-7xl mx-auto px-5 sm:px-8 py-20 lg:py-28">
+      <div class="max-w-3xl">
+        <p class="uppercase tracking-[.2em] text-sm font-bold" style="color:#0b7473;">What I offer</p>
+        <h2 class="display-font mt-4 leading-tight text-3xl font-bold" style="color:#162529;">AR and finance admin support that keeps your books moving.</h2>
+      </div>
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="rounded-2xl border p-6" style="border-color:#d5e8e5; background:#fff;">
+          <i data-lucide="phone-call" style="color:#0b7473;" width="24" height="24" aria-hidden="true"></i>
+          <h3 class="font-bold mt-4 text-lg" style="color:#0b7473;">Collections &amp; Follow-Up</h3>
+          <p class="mt-2 text-sm leading-6" style="color:#496063;">Proactive follow-up on outstanding balances via calls and email, keeping overdue accounts moving toward resolution.</p>
+        </div>
+        <div class="rounded-2xl border p-6" style="border-color:#d5e8e5; background:#fff;">
+          <i data-lucide="message-circle-question" style="color:#0b7473;" width="24" height="24" aria-hidden="true"></i>
+          <h3 class="font-bold mt-4 text-lg" style="color:#0b7473;">Payment Query Resolution</h3>
+          <p class="mt-2 text-sm leading-6" style="color:#496063;">Direct, responsive customer communication to resolve payment questions and billing concerns before they escalate.</p>
+        </div>
+        <div class="rounded-2xl border p-6" style="border-color:#d5e8e5; background:#fff;">
+          <i data-lucide="scale" style="color:#0b7473;" width="24" height="24" aria-hidden="true"></i>
+          <h3 class="font-bold mt-4 text-lg" style="color:#0b7473;">Account Reconciliation</h3>
+          <p class="mt-2 text-sm leading-6" style="color:#496063;">Matching payments to invoices and clearing unapplied balances so your records reflect reality.</p>
+        </div>
+        <div class="rounded-2xl border p-6" style="border-color:#d5e8e5; background:#fff;">
+          <i data-lucide="bar-chart-3" style="color:#0b7473;" width="24" height="24" aria-hidden="true"></i>
+          <h3 class="font-bold mt-4 text-lg" style="color:#0b7473;">AR Aging &amp; Reporting</h3>
+          <p class="mt-2 text-sm leading-6" style="color:#496063;">Recurring statements and aging reports that keep you and your team looking at accurate, current numbers.</p>
+        </div>
+        <div class="rounded-2xl border p-6" style="border-color:#d5e8e5; background:#fff;">
+          <i data-lucide="sparkles" style="color:#0b7473;" width="24" height="24" aria-hidden="true"></i>
+          <h3 class="font-bold mt-4 text-lg" style="color:#0b7473;">AI-Assisted Automation</h3>
+          <p class="mt-2 text-sm leading-6" style="color:#496063;">Identifying repetitive manual tasks and building lightweight tools — from auto-send reports to document automation — to remove them.</p>
+        </div>
+        <div class="rounded-2xl border p-6" style="border-color:#d5e8e5; background:#fff;">
+          <i data-lucide="book-open-check" style="color:#0b7473;" width="24" height="24" aria-hidden="true"></i>
+          <h3 class="font-bold mt-4 text-lg" style="color:#0b7473;">Bookkeeping Support <span class="text-xs font-semibold" style="color:#a76a11;">(In Training)</span></h3>
+          <p class="mt-2 text-sm leading-6" style="color:#496063;">Currently building hands-on QuickBooks Online and Xero skills to expand into broader bookkeeping support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES -->
+  <section id="case-studies" class="w-full" style="background:#162529;">
+    <div class="w-full max-w-7xl mx-auto px-5 sm:px-8 py-20 lg:py-28">
+      <div class="max-w-3xl">
+        <p class="uppercase tracking-[.2em] text-sm font-bold" style="color:#e7ae49;">Real work, real tools</p>
+        <h2 class="display-font mt-4 leading-tight text-white text-3xl font-bold">Two problems I noticed — and built my way out of.</h2>
+        <p class="mt-5 text-lg leading-8" style="color:#d9e9e7;">I don't just execute tasks — I look for the recurring manual step and ask whether it needs to be manual at all. Here's what that's looked like in practice.</p>
+      </div>
+
+      <!-- Case study 1 -->
+      <article class="mt-12 rounded-[1.6rem] border border-white/10 p-7 sm:p-10" style="background:rgba(255,255,255,.05);">
+        <p class="uppercase tracking-[.16em] text-xs font-bold" style="color:#e7ae49;">Case Study 01</p>
+        <h3 class="display-font mt-2 text-white text-xl font-bold">Automated Weekly Statement Distribution</h3>
+        <div class="mt-8 grid md:grid-cols-3 gap-8">
+          <div class="pipeline-step">
+            <p class="text-xs font-bold uppercase tracking-wide" style="color:#e7ae49;">The Problem</p>
+            <p class="mt-2 leading-7 text-sm" style="color:#d9e9e7;">Some customers request a Statement of Account weekly — beyond what our standard automated dunning system covers — which meant pulling and sending those manually every week.</p>
+          </div>
+          <div class="pipeline-step">
+            <p class="text-xs font-bold uppercase tracking-wide" style="color:#e7ae49;">What I Built</p>
+            <p class="mt-2 leading-7 text-sm" style="color:#d9e9e7;">An AI-assisted, Outlook-based automation that generates and sends the weekly SOA to each relevant customer automatically.</p>
+          </div>
+          <div class="pipeline-step">
+            <p class="text-xs font-bold uppercase tracking-wide" style="color:#e7ae49;">The Outcome</p>
+            <p class="mt-2 leading-7 text-sm" style="color:#d9e9e7;">Eliminated the recurring manual step entirely — those statements now go out automatically, every week, with no follow-up needed on my end.</p>
+          </div>
+        </div>
+        <p class="mt-6 text-xs font-semibold uppercase tracking-wide" style="color:#8ccfca;">Tools: Excel &middot; Outlook &middot; AI Tools</p>
+      </article>
+
+      <!-- Case study 2 -->
+      <article class="mt-8 rounded-[1.6rem] border border-white/10 p-7 sm:p-10" style="background:rgba(255,255,255,.05);">
+        <p class="uppercase tracking-[.16em] text-xs font-bold" style="color:#e7ae49;">Case Study 02</p>
+        <h3 class="display-font mt-2 text-white text-xl font-bold">Bulk Invoice Merger for Enterprise Accounts</h3>
+        <div class="mt-8 grid md:grid-cols-3 gap-8">
+          <div class="pipeline-step">
+            <p class="text-xs font-bold uppercase tracking-wide" style="color:#e7ae49;">The Problem</p>
+            <p class="mt-2 leading-7 text-sm" style="color:#d9e9e7;">Select high-profile enterprise accounts require bulk invoices merged into a single document before submission to their platform — with no ready-made tool available, this was done fully by hand.</p>
+          </div>
+          <div class="pipeline-step">
+            <p class="text-xs font-bold uppercase tracking-wide" style="color:#e7ae49;">What I Built</p>
+            <p class="mt-2 leading-7 text-sm" style="color:#d9e9e7;">A custom PDF merger built in Jupyter Notebook with the help of Claude AI to automate the bulk-invoice merging process.</p>
+          </div>
+          <div class="pipeline-step">
+            <p class="text-xs font-bold uppercase tracking-wide" style="color:#e7ae49;">The Outcome</p>
+            <p class="mt-2 leading-7 text-sm" style="color:#d9e9e7;">Replaced a fully manual process with an automated one, cutting the time spent preparing invoice submissions for these accounts.</p>
+          </div>
+        </div>
+        <p class="mt-6 text-xs font-semibold uppercase tracking-wide" style="color:#8ccfca;">Tools: Jupyter Notebook &middot; Claude AI</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="w-full" style="background:#fffdf8;">
+    <div class="w-full max-w-7xl mx-auto px-5 sm:px-8 py-20 lg:py-28">
+      <div class="grid lg:grid-cols-[.8fr_1.2fr] gap-12">
+        <div>
+          <p class="uppercase tracking-[.2em] text-sm font-bold" style="color:#0b7473;">Skills &amp; tools</p>
+          <h2 class="display-font mt-4 leading-tight text-3xl font-bold" style="color:#162529;">Ready to support financial operations and admin workflows.</h2>
+          <p class="mt-6 text-lg leading-8" style="color:#496063;">A toolkit built through high-volume AR work, customer coordination, and continuous upskilling.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div class="rounded-2xl border p-6" style="border-color:#d5e8e5; background:#fff;">
+            <h3 class="font-bold" style="color:#0b7473;">Accounts Receivable</h3>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="skill-chip rounded-full px-3 py-1.5 text-sm font-medium">Collections</span>
+              <span class="skill-chip rounded-full px-3 py-1.5 text-sm font-medium">AR Aging Reports</span>
+              <span class="skill-chip rounded-full px-3 py-1.5 text-sm font-medium">Payment Query Resolution</span>
+              <span class="skill-chip rounded-full px-3 py-1.5 text-sm font-medium">Reconciliation</span>
+            </div>
+          </div>
+          <div class="rounded-2xl border p-6" style="border-color:#d5e8e5; background:#fff;">
+            <h3 class="font-bold" style="color:#0b7473;">Systems &amp; Software</h3>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="skill-chip rounded-full px-3 py-1.5 text-sm font-medium">SAP</span>
+              <span class="skill-chip rounded-full px-3 py-1.5 text-sm font-medium">Get Paid</span>
+              <span class="skill-chip rounded-full px-3 py-1.5 text-sm font-medium">Artemis CRM</span>
+              <span class="skill-chip rounded-full px-3 py-1.5 text-sm font-medium">Microsoft 365</span>
+            </div>
+          </div>
+          <div class="rounded-2xl border p-6" style="border-color:#d5e8e5; background:#fff;">
+            <h3 class="font-bold" style="color:#0b7473;">Excel &amp; Reporting</h3>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="skill-chip rounded-full px-3 py-1.5 text-sm font-medium">Pivot Tables</span>
+              <span class="skill-chip rounded-full px-3 py-1.5 text-sm font-medium">VLOOKUP</span>
+              <span class="skill-chip rounded-full px-3 py-1.5 text-sm font-medium">XLOOKUP</span>
+              <span class="skill-chip rounded-full px-3 py-1.5 text-sm font-medium">Data Validation</span>
+            </div>
+          </div>
+          <div class="rounded-2xl border p-6" style="border-color:#d5e8e5; background:#fff;">
+            <h3 class="font-bold" style="color:#0b7473;">AI &amp; Accounting Growth</h3>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="skill-chip rounded-full px-3 py-1.5 text-sm font-medium">Claude AI</span>
+              <span class="skill-chip rounded-full px-3 py-1.5 text-sm font-medium">ChatGPT</span>
+              <span class="skill-chip rounded-full px-3 py-1.5 text-sm font-medium">QuickBooks Online (In Training)</span>
+              <span class="skill-chip rounded-full px-3 py-1.5 text-sm font-medium">Xero (In Training)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- READINESS -->
+  <section class="w-full" style="background:#edf6f5;">
+    <div class="w-full max-w-7xl mx-auto px-5 sm:px-8 py-16 lg:py-20">
+      <div class="rounded-[1.6rem] p-7 sm:p-10 text-white" style="background:#0b7473;">
+        <div class="grid lg:grid-cols-[.85fr_1.15fr] gap-9 items-center">
+          <div>
+            <p class="uppercase tracking-[.18em] text-sm font-bold" style="color:#e7d59a;">Remote work readiness</p>
+            <h2 class="display-font mt-3 leading-tight text-2xl font-bold">Set up to be dependable from day one.</h2>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-5">
+            <p class="border-l-2 pl-4 leading-7 text-white/90" style="border-color:#e7ae49;">Reliable internet: PLDT Fiber 500 Mbps with Globe 5G backup.</p>
+            <p class="border-l-2 pl-4 leading-7 text-white/90" style="border-color:#e7ae49;">Dedicated home office with dual monitors, HD webcam, and noise-cancelling headset.</p>
+            <p class="border-l-2 pl-4 leading-7 text-white/90" style="border-color:#e7ae49;">Laptop: Intel i7 12th Gen, 16GB RAM.</p>
+            <p class="border-l-2 pl-4 leading-7 text-white/90" style="border-color:#e7ae49;">Available full-time or part-time, flexible for U.S. time zones.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="w-full" style="background:#fffdf8;">
+    <div class="w-full max-w-7xl mx-auto px-5 sm:px-8 py-20 lg:py-28 text-center">
+      <p class="uppercase tracking-[.2em] text-sm font-bold" style="color:#0b7473;">Let's work together</p>
+      <h2 class="display-font mt-4 mx-auto max-w-3xl leading-tight text-3xl font-bold" style="color:#162529;">Looking for a detail-oriented VA with strong AR experience?</h2>
+      <p class="mt-6 mx-auto max-w-2xl text-lg leading-8" style="color:#496063;">I'd be glad to support your collections, payment query resolution, reconciliation, or reporting workflows with dependable, process-focused help.</p>
+      <div class="mt-9 flex flex-col sm:flex-row justify-center gap-3">
+        <a href="mailto:ayeza.manlangit1999@gmail.com" class="inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 font-bold no-underline transition-transform hover:-translate-y-0.5" style="background:#0b7473; color:#fff;">Email Ayeza</a>
+        <a href="https://linkedin.com/in/ayeza-manlangit-va" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 rounded-full border px-6 py-3.5 font-bold no-underline transition-transform hover:-translate-y-0.5" style="border-color:#0b7473; color:#0b7473; background:#fff;">Connect on LinkedIn</a>
+      </div>
+      <div class="mt-10 flex flex-wrap justify-center gap-x-7 gap-y-3 text-sm font-medium" style="color:#496063;">
+        <span>ayeza.manlangit1999@gmail.com</span>
+        <span>Dasmariñas City, Philippines</span>
+        <span>Full-time or Part-time &middot; Flexible for U.S. Time Zones</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="w-full px-5 sm:px-8 py-7 text-center" style="background:#162529;">
+  <p class="text-sm text-white/70">&copy; 2026 Ayeza Manlangit &middot; Accounts Receivable &amp; Collections VA</p>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    lucide.createIcons();
+    const menuButton = document.getElementById("menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+    menuButton.addEventListener("click", function () {
+      const isOpen = !mobileMenu.classList.contains("hidden");
+      mobileMenu.classList.toggle("hidden", isOpen);
+      menuButton.setAttribute("aria-expanded", String(!isOpen));
+    });
+    mobileMenu.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        mobileMenu.classList.add("hidden");
+        menuButton.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    document.getElementById("resume-link-top").setAttribute("href", "https://drive.google.com/file/d/1QbZH0QaGRF28-GmxiMEkoPNb-7mmg2Ud/view?usp=drivesdk");
+  });
+</script>
+
+</body>
+</html>
